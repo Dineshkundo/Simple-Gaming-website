@@ -1,0 +1,278 @@
+html{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;    
+    background-image: url('bg.jpg');
+    background-size: cover;
+}
+
+body{
+    /* background-color: #dfe4ea;     */
+    
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+}
+
+.container *{
+    outline: 0px solid black;   
+}
+
+.container{
+    width: 60%;
+    height: 90%;
+    margin: 5vh auto auto auto;
+    border: 1px solid black;    
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(39, 60, 117,1.0);
+}
+
+/* titile */
+.container .title{
+    height: 9%;
+    display: block;
+    text-align: center;
+    background-color: #192a56;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container .title span{
+float: center;
+font-size: 2.5rem;
+
+}
+
+/* game container */
+.game-container{
+    height: 80%;
+    display: grid;   
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows:  25% 25% 25% 25%;
+    grid-gap: 0rem;
+}
+
+.game-container .block{
+    outline: 0.5px solid rgba(25, 42, 86,1.0);
+}
+.game-container .block img{    
+    display: none;
+}
+
+.game-container .tom img{    
+    display: block;
+}
+
+/* tom */
+img{    
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/* result conatiner */
+.result-container{
+    height: 11%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 2.5rem;
+    text-align: center;
+    background-color: #192a56;
+    color: #fff;
+}
+
+.result-container .score, .time-left{
+    align-self: center;
+    flex: 1;
+}
+
+/* controls */
+.controls{
+    margin-top: 1rem;
+    width: 100%;    
+    height: 4rem;
+    font-size: 2rem;
+    background-color: #27ae60;
+    border: 0.5px solid #1e8d4c;
+    color: #fff; 
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#play{
+    flex:2;
+}
+
+#play__text{
+    margin-top: 0.55rem;
+    text-align: center;
+    letter-spacing: 0.125em;
+}
+
+#play:hover{
+    background-color: #2ecc71;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* speed */
+.speed{
+    padding-top: 0.55rem;
+    background-color: #c0392b;
+    flex:1;
+    text-align: center;
+    
+}
+
+/* duraiont */
+.duration{
+    background-color: #c0392b  ;
+    flex:1;
+    text-align: center;
+    cursor: pointer;
+}
+
+.duration #dur__drop{
+    background-color: #c0392b  ;    
+    color: #FFF;
+    font-size: 2rem;
+    padding: 0;
+    height: 100%;
+    margin: 0;
+    width: 60%;
+    border: 0;
+    -webkit-appearance: none;    
+    text-align: center;
+    cursor: pointer;
+
+}
+
+/* media queries */
+@media  screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class='container'] {
+      width: 95%;
+      margin: 20;
+    }
+
+    
+    #myModal .modal-content {
+        width: 80%; /* Could be more or less, depending on screen size */
+        font-size: 1.5rem;
+        margin: 30% auto;
+
+        }
+      
+}
+
+
+  /* modal */
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+  
+  /* Modal Content/Box */
+.modal-content {
+background-color: #1abc9c;
+margin: 10% auto; /* 15% from the top and centered */
+padding: 1rem;
+border: 1px solid #888;
+width: 30%; /* Could be more or less, depending on screen size */
+font-size: 2rem;
+color: white;
+text-align: center;
+font-weight: 600;
+}
+
+/* The Close Button */
+.close {
+color: #fff;
+float: right;
+font-size: 1em;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: black;
+text-decoration: none;
+cursor: pointer;
+}
+
+
+/* select menu */
+
+ .controls .speed__div.box{
+   width: 30%;
+   height: 100%;
+   background-color: #c0392b  ;            
+   cursor: pointer;
+}
+
+  
+
+  
+  .box select {
+    background-color: #c0392b  ;        
+    color: white;
+    font-size: 2rem;
+    -webkit-appearance: none;
+    appearance: button;
+    outline: none;
+    width: 70%;
+    border: 0;
+    cursor: pointer;
+    height: 100%;
+    padding-left: 1rem;
+    
+  }
+
+  .speed__div .box i {
+    background-color: #c0392b  ;            
+    padding: 0;
+    margin: 0;
+    padding-left: 0.1rem;
+  }
+  
+  .box::before {
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    font-size: 28px;
+    line-height: 45px;
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #c0392b  ;        
+    background-color: rgba(255, 255, 255, 0.1);
+    pointer-events: none;
+  }
+  
+  .box:hover::before {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+  
+  .box select option {
+    padding: 30px;
+  }

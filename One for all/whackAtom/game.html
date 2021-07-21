@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="game_style.css">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP&display=swap" rel="stylesheet">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <title>WhackAMole</title>
+</head>
+<body>
+  
+    <div class="container">
+
+        <div class="title"><span>Hit the Image</span></div>
+
+        <div class="game-container">
+            <div class="block" id="1"> <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="2"> <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="3"> <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="4"> <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="5"> <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="6"> <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="7"> <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="8"> <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="9"> <img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="10"><img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="11"><img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="12"><img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="13"><img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="14"><img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="15"><img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="16"><img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="16"><img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="16"><img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="16"><img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="16"><img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+            <div class="block" id="16"><img src="https://upload.wikimedia.org/wikipedia/en/2/2f/Jerry_Mouse.png" alt=""></div>
+        </div>
+
+        <div class="result-container">
+            <div class="score">Score: <span id="score__text">0</span></div>
+            <div class="time-left">Time Left: <span id="timer">--</span></div>
+        </div>
+
+        <div class="controls">
+            <!-- <div class="speed">Normal</div> -->
+           
+            <div class="speed__div box" >                
+                    <select id="gameSpeed">                      
+                      <option value="1000">Slow<i class='fas fa-chevron-circle-down'></i></option>
+                      <option value="750">Normal</option>
+                      <option value="500">Fast</option>                      
+                    </select>
+                    <i class='fas fa-chevron-circle-down'></i>                 
+            </div>
+            <div id="play"><p id="play__text">Play Game</p></div>
+            <!-- <div class="duration"><input type="number" name="" id="durationFromUser" max="120" value="60"></div> -->
+            <div class="duration">
+                <select id="dur__drop">                      
+                    <option value="10">10s</option>
+                    <option value="30">30s</option>
+                    <option value="60">60s</option>                      
+                  </select>
+                  <i class='fas fa-chevron-circle-down'></i>                 
+            </div>
+        </div>
+    </div>
+
+    <!-- The Modal -->
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <p>Time's Up. You've Scored: <b><span id='modal--score'></span></b> points</p>
+    </div>
+  
+  </div>
+    <div style="position: absolute;top: 88%;left: 2%;border-radius: 12px;color: black;background-color: yellow;font-size: 27px;padding: 10px;height: 40px;width: 80px;"><a href="D:/bin/One%20for%20all/homepage.html" style="text-decoration: none;color: black;">HOME</a></div>
+    <script src="game_script.js"></script>
+</body>
+</html>
